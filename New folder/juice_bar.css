@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(istockphoto-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    font-family: sans-serif;
+}
+
+.nav{
+    height: 100%;
+    position: fixed;
+    left: -2em;
+    top: 0;
+    z-index: 1000;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 990;
+    height: 100%;
+    background: silver;
+}
+
+.bar li{
+    list-style: none;
+}
+
+.bar a{
+    display: block;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    transition: all 0.5s ease-out;
+    font-family: sans-serif;
+}
+
+.home a{
+    color: gold;
+}
+
+.bar a:hover{
+    color: white;
+    transform: translateX(10px) scale(1.1);
+}
+
+.home a:hover{
+    color: orange;
+}
+
+.nav:hover .text{
+    transform: rotateY(0deg);
+}
+
+.text{
+    position: fixed;
+    left: 63px;
+    top: 0;
+    z-index: 980;
+    height: 100%;
+    background: #172121;
+    border-right: 1px solid rgba(0, 0, blue, 0.3);
+    transition: transform 0.6s linear;
+    backface-visibility: hidden;
+    transform-origin: left;
+    transform:perspective(1000px) rotateY(90deg);
+}
+
+.text li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.text a{
+    display: block;
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    text-indent: 1em;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #999999;
+    text-shadow: 0 1px 0 black;
+    transition: all in ease;
+    font-family: sans-serif;
+}
+
+#home a{
+    color: gold;
+}
+
+.text a:hover{
+    color: white;
+    transform: translateX(10px);
+}
+
+#home a:hover{
+    color: orange;
+}
+
+#MainTopic{
+    text-align: center;
+    margin-top: 5%;
+    letter-spacing: 1px;
+    font-size: 45px;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+#moto{
+    color: rgb(231, 230, 230);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 20%;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+#moto:hover{
+    color: white;
+}
+
